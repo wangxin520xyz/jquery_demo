@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 400px;
+      height: 400px;
+      /* background-color: brown; */
+      overflow: hidden;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img class="image" src="./6110341_1430275357264_800x600.jpg" alt="">
+  </div>
+  <div>
+    <img class="image" src="./6110341_1430275357264_800x600.jpg" alt="">
+  </div>
+  <script>
+    var image = document.getElementsByClassName('image')
+    image.onclick = function() {
+      if (this.offsetWidth > this.offsetHeight) {
+        this.style.height = '500px'
+      } else {
+        this.style.width = '500px'
+      }
+    }
+    // image.className = 'change'
+    // console.log(image.offsetWidth)
+  </script>
+</body>
+</html>
